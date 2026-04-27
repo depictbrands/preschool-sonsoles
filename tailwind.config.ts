@@ -47,6 +47,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        azure: {
+          DEFAULT: "hsl(var(--azure))",
+          foreground: "hsl(var(--azure-foreground))",
+        },
+        leaf: {
+          DEFAULT: "hsl(var(--leaf))",
+          foreground: "hsl(var(--leaf-foreground))",
+        },
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          foreground: "hsl(var(--ink-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
