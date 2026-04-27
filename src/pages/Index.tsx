@@ -66,11 +66,11 @@ const Index = () => {
             <img
               src={heroKids}
               alt="Niños felices en Preescolar Sonsoles"
-              width={1536}
+              width={1024}
               height={1024}
-              className="relative rounded-[2rem] shadow-playful w-full object-cover aspect-[4/3]"
+              className="relative rounded-full shadow-playful w-full max-w-[520px] mx-auto aspect-square object-cover border-8 border-card"
             />
-            <div className="absolute -bottom-6 -left-6 bg-card rounded-2xl shadow-soft px-5 py-4 flex items-center gap-3 animate-wiggle">
+            <div className="absolute bottom-4 left-0 sm:left-4 bg-card rounded-2xl shadow-soft px-5 py-4 flex items-center gap-3 animate-wiggle">
               <div className="flex -space-x-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-accent text-accent" />)}
               </div>
@@ -81,7 +81,9 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="h-16 bg-primary wave-divider -mb-1" />
+        <div className="relative h-20 -mb-1 overflow-hidden">
+          <div className="absolute inset-y-0 left-0 h-full w-[200%] bg-primary wave-divider animate-wave-slide" />
+        </div>
       </section>
 
       {/* INTRO */}
