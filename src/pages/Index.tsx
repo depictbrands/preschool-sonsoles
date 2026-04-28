@@ -70,7 +70,7 @@ const Index = () => {
       {/* HERO */}
       <section id="top" className="relative overflow-hidden">
         <video
-          src={heroBgVideo}
+          src="/website-hero.mp4"
           autoPlay
           muted
           loop
