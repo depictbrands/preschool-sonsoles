@@ -161,7 +161,7 @@ const Index = () => {
             />
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-7">
-            <Button asChild variant="sun" size="xl"><a href="#metodologia">Conoce nuestro programa</a></Button>
+            <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
           </div>
         </div>
       </section>
