@@ -144,7 +144,7 @@ const Index = () => {
           ].map((item, i) => (
             <div key={i} className={`${item.color} rounded-3xl p-8 shadow-soft hover:-translate-y-1 transition-transform`}>
               <item.icon className="h-10 w-10 mb-4 opacity-90" />
-              <p className="text-2xl font-bold leading-tight" style={{ fontFamily: 'Fraunces, serif' }}>{item.text}</p>
+              <p className="text-2xl font-bold leading-tight font-sans">{item.text}</p>
             </div>
           ))}
         </div>
