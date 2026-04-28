@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users } from "lucide-react";
+import { Instagram, Facebook, Phone, Mail, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
@@ -328,6 +328,7 @@ const Index = () => {
           <div>
             <h4 className="font-bold mb-3 text-base">Contacto</h4>
             <p className="text-sm opacity-80 flex items-center gap-2"><Phone className="h-4 w-4" /> 787-993-5623</p>
+            <a href="mailto:preescolarsonsoles@gmail.com" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors flex items-center gap-2 mt-2 break-all"><Mail className="h-4 w-4 shrink-0" /> preescolarsonsoles@gmail.com</a>
           </div>
           <div>
             <h4 className="font-bold mb-3 text-base">Síguenos</h4>
