@@ -7,7 +7,7 @@ import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookO
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
-import kidsDrawing from "@/assets/kids-drawing.jpg";
+import kidsDrawing from "@/assets/kids-drawing.gif";
 import playground from "@/assets/playground.jpg";
 
 const Index = () => {
