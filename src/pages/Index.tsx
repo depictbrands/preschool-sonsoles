@@ -219,7 +219,16 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-12 sm:h-16 bg-primary wave-divider" aria-hidden="true" />
+        <div className="absolute bottom-0 left-0 right-0 h-12 sm:h-16 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="flex h-full w-[200%] animate-wave-slide">
+            <svg className="h-full w-1/2 shrink-0 block" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" fill="hsl(var(--primary))" />
+            </svg>
+            <svg className="h-full w-1/2 shrink-0 block" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" fill="hsl(var(--primary))" />
+            </svg>
+          </div>
+        </div>
       </section>
 
       {/* INTRO */}
