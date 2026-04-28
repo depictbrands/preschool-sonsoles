@@ -78,7 +78,7 @@ const Index = () => {
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="absolute inset-0 bg-background/60 -z-10" />
+        <div className="absolute inset-0 bg-black/60 -z-10" />
         <div className="container grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 bg-accent/30 text-ink px-4 py-1.5 rounded-full text-sm font-bold mb-6">
