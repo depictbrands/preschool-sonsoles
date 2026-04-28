@@ -14,12 +14,15 @@ const ParentPortal = () => {
   const [tuitionUrl, setTuitionUrl] = useState<string | null>(null);
 
   useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "Portal de Padres | Preescolar Sonsoles";
     const meta = document.createElement("meta");
     meta.name = "robots";
     meta.content = "noindex, nofollow, noarchive, nosnippet";
     document.head.appendChild(meta);
     return () => {
       document.head.removeChild(meta);
+      document.title = prevTitle;
     };
   }, []);
 
