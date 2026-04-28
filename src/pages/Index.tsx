@@ -15,6 +15,7 @@ import playground from "@/assets/playground.jpg";
 import contactKids from "@/assets/contact-kids.jpg";
 import facility1 from "@/assets/facility-1.jpg";
 import facility2 from "@/assets/facility-2.jpg";
+import sonsolesBuilding from "@/assets/sonsoles-building.jpg";
 import { useEffect, useState } from "react";
 
 const Index = () => {
@@ -313,7 +314,14 @@ const Index = () => {
           <h2 className="text-4xl sm:text-5xl text-ink mt-5 mb-4">Visítanos en Puerto Rico</h2>
           <p className="text-lg text-muted-foreground font-bold">Encuéntranos fácilmente en el mapa.</p>
         </div>
-        <div className="container">
+        <div className="container grid md:grid-cols-2 gap-6">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
+            <img
+              src={sonsolesBuilding}
+              alt="Edificio Preescolar Sonsoles"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
             <iframe
               title="Ubicación Preescolar Sonsoles"
