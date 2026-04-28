@@ -138,7 +138,7 @@ const Index = () => {
       {/* METODOLOGÍA */}
       <section id="metodologia" className="relative w-full overflow-hidden" style={{ aspectRatio: "2241 / 1600" }}>
         <img
-          src={kidsDrawing}
+          src={duckAnimation}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
