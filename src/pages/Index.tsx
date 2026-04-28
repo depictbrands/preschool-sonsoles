@@ -67,11 +67,10 @@ const Index = () => {
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-ink">
             <a href="#sobre" className="hover:text-primary transition-colors">Sobre Nosotros</a>
-            <a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Metodología</a>
+            <a href="#metodologia" className="hover:text-primary transition-colors">Metodología</a>
             <a href="#facilidades" className="hover:text-primary transition-colors">Facilidades</a>
             <a href="#testimonios" className="hover:text-primary transition-colors">Testimonios</a>
-            <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
-            <a href="/portal-padres" className="hover:text-primary transition-colors">Portal de Padres</a>
+            <a href="#ubicacion" className="hover:text-primary transition-colors">Contacto</a>
           </nav>
           <div className="flex items-center gap-3">
             <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-5 w-5" /></a>
