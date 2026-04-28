@@ -91,7 +91,7 @@ const Index = () => {
             </h1>
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="hero" size="xl"><a href="#contacto">Agenda un tour</a></Button>
-              <Button asChild variant="outlineWarm" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Agenda una consulta</a></Button>
+              <Button asChild variant="outlineWarm" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Agenda una cita</a></Button>
             </div>
           </div>
           <div className="relative">
