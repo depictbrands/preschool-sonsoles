@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Facebook, Phone, Mail, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users } from "lucide-react";
+import { Instagram, Facebook, Phone, Mail, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, Lock } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
@@ -71,10 +71,14 @@ const Index = () => {
             <a href="#facilidades" className="hover:text-primary transition-colors">Facilidades</a>
             <a href="#testimonios" className="hover:text-primary transition-colors">Testimonios</a>
             <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
+            <a href="/portal-padres" className="hover:text-primary transition-colors">Portal de Padres</a>
           </nav>
           <div className="flex items-center gap-3">
             <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-5 w-5" /></a>
             <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary"><Facebook className="h-5 w-5" /></a>
+            <Button asChild variant="outlineWarm" size="lg" className="hidden md:inline-flex">
+              <a href="/portal-padres"><Lock className="h-4 w-4" /> Portal de Padres</a>
+            </Button>
             <Button asChild variant="hero" size="lg" className="hidden sm:inline-flex">
               <a href="#contacto">Matricúlate</a>
             </Button>
