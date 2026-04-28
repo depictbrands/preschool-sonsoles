@@ -63,7 +63,7 @@ const Index = () => {
         <div className="container flex items-center justify-between py-3">
           <a href="#top" className="flex items-center gap-3">
             <img src={logo} alt="Preescolar Sonsoles escudo" className="h-12 w-12" />
-            <span className="font-display text-xl font-bold text-ink hidden sm:block" style={{ fontFamily: 'Fraunces, serif' }}>Preescolar Sonsoles</span>
+            <span className="font-display text-xl font-bold text-ink hidden sm:block" style={{ fontFamily: "'SoupBone', serif" }}>Preescolar Sonsoles</span>
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-ink">
             <a href="#sobre" className="hover:text-primary transition-colors">Sobre Nosotros</a>
@@ -342,7 +342,7 @@ const Index = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={logo} alt="" className="h-12 w-12" />
-              <span className="font-bold text-lg" style={{ fontFamily: 'Fraunces, serif' }}>Preescolar Sonsoles</span>
+              <span className="font-bold text-lg" style={{ fontFamily: "'SoupBone', serif" }}>Preescolar Sonsoles</span>
             </div>
             <p className="text-sm opacity-70">Sembrando valores, cultivando grandeza desde Puerto Rico.</p>
           </div>
