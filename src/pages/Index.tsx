@@ -339,7 +339,7 @@ const Index = () => {
           </div>
         </div>
         <div className="container mt-10 pt-6 border-t border-white/10 text-xs opacity-60 text-center">
-          © {new Date().getFullYear()} Preescolar Sonsoles. Todos los derechos reservados.
+          © {new Date().getFullYear()} Preescolar Sonsoles. Todos los derechos reservados. · Designed by <a href="https://depictbrands.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline-offset-2 hover:underline">DepictBrands</a>
         </div>
       </footer>
     </div>
