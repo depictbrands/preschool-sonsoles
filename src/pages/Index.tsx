@@ -118,13 +118,13 @@ const Index = () => {
         </div>
 
         <div className="container relative">
-          <div className="w-full rounded-3xl shadow-soft overflow-hidden" style={{ aspectRatio: "2241 / 1600" }}>
+          <div className="w-full rounded-3xl shadow-soft overflow-hidden" style={{ aspectRatio: "2320 / 1561" }}>
             <img
               src={kidsDrawing}
               alt="Dibujo infantil de una familia con la bandera de Puerto Rico"
               loading="lazy"
-              width={2241}
-              height={1600}
+              width={2320}
+              height={1561}
               className="w-full h-full object-cover"
             />
           </div>
