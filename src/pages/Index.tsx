@@ -274,7 +274,7 @@ const Index = () => {
       </section>
 
       {/* METODOLOGÍA */}
-      <section id="metodologia" className="relative w-full overflow-hidden">
+      <section id="metodologia" className="relative w-full overflow-hidden lg:aspect-[2241/1600]">
         <img
           src={duckAnimation}
           alt=""
@@ -282,7 +282,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
-        <div className="relative z-10 container py-24">
+        <div className="relative z-10 container py-24 lg:absolute lg:inset-0 lg:py-24 lg:flex lg:flex-col lg:justify-center">
           <div className="max-w-2xl mx-auto mb-14 text-center">
             <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Metodología</span>
             <h2 className="text-4xl sm:text-5xl text-ink mt-3">Aprender jugando, crecer con propósito.</h2>
