@@ -84,9 +84,9 @@ const Index = () => {
             <div className="inline-flex items-center gap-2 bg-[#413D45] text-white px-4 py-1.5 rounded-full text-sm font-bold mb-6">
               <Sparkles className="h-4 w-4 text-primary" /> Edades 2 a 4 años · Puerto Rico
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-white mb-6">
-              Sembrando <span className="text-primary">valores</span>,<br />
-              cultivando <span className="text-secondary">grandeza</span>.
+            <h1 className="text-5xl sm:text-6xl leading-[1.05] text-white mb-6 lg:text-6xl">
+              Sembrando <span className="text-primary-foreground">valores</span>,<br />
+              cultivando <span className="text-primary-foreground">grandeza</span>.
             </h1>
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="hero" size="xl"><a href="#contacto">Agenda un tour</a></Button>
