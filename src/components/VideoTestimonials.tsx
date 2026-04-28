@@ -67,7 +67,7 @@ const VideoTestimonials = () => {
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-primary font-bold uppercase tracking-wider text-sm">Testimonios en video</span>
-          <h2 className="text-4xl sm:text-5xl text-ink mt-3">Escucha a nuestras familias.</h2>
+          <h2 className="text-4xl sm:text-5xl text-ink mt-3">Preescolar de cinco estrellas 🌟🌟🌟🌟🌟</h2>
           <p className="text-muted-foreground mt-4">
             Padres y madres comparten su experiencia con Sonsoles.
           </p>
