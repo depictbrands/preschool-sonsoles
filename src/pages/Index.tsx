@@ -8,6 +8,7 @@ import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
 import kidsDrawing from "@/assets/kids-drawing.gif";
+import duckAnimation from "@/assets/duck-animation.gif";
 import playground from "@/assets/playground.jpg";
 
 const Index = () => {
