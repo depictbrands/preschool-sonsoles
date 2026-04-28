@@ -88,9 +88,6 @@ const Index = () => {
               Sembrando <span className="text-primary">valores</span>,<br />
               cultivando <span className="text-secondary">grandeza</span>.
             </h1>
-            <p className="text-lg text-white max-w-xl mb-8">
-              Un preescolar lleno de cariño, música y aprendizaje en el corazón de la familia puertorriqueña.
-            </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="hero" size="xl"><a href="#contacto">Agenda un tour</a></Button>
               <Button asChild variant="outlineWarm" size="xl"><a href="#contacto">Agenda una consulta</a></Button>
