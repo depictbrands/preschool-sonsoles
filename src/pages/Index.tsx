@@ -306,6 +306,29 @@ const Index = () => {
         </div>
       </section>
 
+      {/* MAP */}
+      <section id="ubicacion" className="bg-muted py-20">
+        <div className="container text-center max-w-3xl mb-10">
+          <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Ubicación</span>
+          <h2 className="text-4xl sm:text-5xl text-ink mt-5 mb-4">Visítanos en Puerto Rico</h2>
+          <p className="text-lg text-muted-foreground font-bold">Encuéntranos fácilmente en el mapa.</p>
+        </div>
+        <div className="container">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
+            <iframe
+              title="Ubicación Preescolar Sonsoles"
+              src="https://www.google.com/maps?q=Preescolar+Sonsoles+Puerto+Rico&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="bg-ink text-ink-foreground py-12">
         <div className="container grid md:grid-cols-3 gap-8 items-start">
