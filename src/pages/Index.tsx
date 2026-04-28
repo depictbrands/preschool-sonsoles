@@ -147,7 +147,7 @@ const Index = () => {
       {/* INTRO */}
       <section id="sobre" className="bg-muted py-20">
         <div className="container text-center max-w-3xl mb-14">
-          <h2 className="text-4xl sm:text-5xl text-ink mb-5">Sembrando excelencia en el corazón de la familia puertorriqueña.</h2>
+          <h2 className="text-4xl sm:text-5xl text-ink mb-5" style={{ fontFamily: "'ChildsPlayground', cursive" }}>Sembrando excelencia en el corazón de la familia puertorriqueña.</h2>
           <p className="text-lg text-muted-foreground font-bold">Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
         </div>
 
@@ -159,7 +159,7 @@ const Index = () => {
           ].map((item, i) => (
             <div key={i} className={`${item.color} rounded-3xl p-8 shadow-soft hover:-translate-y-1 transition-transform`}>
               <item.icon className="h-10 w-10 mb-4 opacity-90" />
-              <p className="text-2xl font-bold leading-tight font-sans">{item.text}</p>
+              <p className="text-2xl font-bold leading-tight" style={{ fontFamily: "'Sour Gummy', system-ui, sans-serif" }}>{item.text}</p>
             </div>
           ))}
         </div>
