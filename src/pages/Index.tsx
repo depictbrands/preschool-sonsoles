@@ -243,7 +243,7 @@ const Index = () => {
       <section id="testimonios" className="py-24 bg-muted">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-primary font-bold uppercase tracking-wider text-sm">Testimonios</span>
+            <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Testimonios</span>
             <h2 className="text-4xl sm:text-5xl text-ink mt-3">Deja que nuestros padres te cuenten.</h2>
             <p className="text-muted-foreground mt-4">Por qué las familias eligen Sonsoles.</p>
           </div>
