@@ -175,14 +175,17 @@ const Index = () => {
         className="relative overflow-hidden isolate pb-16 sm:pb-24"
       >
         <video
-          src="/website-hero.mp4"
+          key={typeof window !== "undefined" && window.matchMedia("(max-width: 767px)").matches ? "mobile" : "desktop"}
           autoPlay
           muted
           loop
           playsInline
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover -z-10"
-        />
+        >
+          <source src="/herovideo-mobile-fallback.mp4" media="(max-width: 767px)" type="video/mp4" />
+          <source src="/website-hero.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/30 -z-10" />
         <div className="container grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
           <div className="relative z-10">
