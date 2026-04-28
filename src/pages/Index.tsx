@@ -115,7 +115,17 @@ const Index = () => {
           </div>
         </div>
         <div className="relative h-20 -mb-1 overflow-hidden">
-          <div className="absolute inset-y-0 left-0 h-full w-[200%] bg-primary wave-divider animate-wave-slide" />
+          <svg
+            className="absolute inset-y-0 left-0 h-full w-[200%] animate-wave-slide text-primary"
+            viewBox="0 0 2400 80"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              fill="currentColor"
+              d="M0,40 C150,0 300,80 600,40 C900,0 1050,80 1200,40 C1350,0 1500,80 1800,40 C2100,0 2250,80 2400,40 L2400,80 L0,80 Z"
+            />
+          </svg>
         </div>
       </section>
 
