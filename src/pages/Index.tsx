@@ -86,7 +86,20 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative overflow-hidden isolate">
+      <section
+        id="top"
+        className="relative overflow-hidden isolate pb-16 sm:pb-24"
+        style={{
+          WebkitMaskImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1000' preserveAspectRatio='none'><path fill='black' d='M0,0 L1200,0 L1200,920 C1000,1000 800,860 600,940 C400,1020 200,880 0,960 Z'/></svg>\")",
+            maskImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1000' preserveAspectRatio='none'><path fill='black' d='M0,0 L1200,0 L1200,920 C1000,1000 800,860 600,940 C400,1020 200,880 0,960 Z'/></svg>\")",
+          WebkitMaskSize: "100% 100%",
+          maskSize: "100% 100%",
+          WebkitMaskRepeat: "no-repeat",
+          maskRepeat: "no-repeat",
+        }}
+      >
         <video
           src="/website-hero.mp4"
           autoPlay
@@ -131,19 +144,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative h-24 sm:h-32 -mt-12 sm:-mt-16 -mb-12 sm:-mb-16 z-10 overflow-visible pointer-events-none">
-          <svg
-            className="absolute inset-y-0 left-0 h-full w-[200%] animate-wave-slide text-primary"
-            viewBox="0 0 2400 160"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <path
-              fill="currentColor"
-              d="M0,40 C200,-20 400,100 600,40 C800,-20 1000,100 1200,40 C1400,-20 1600,100 1800,40 C2000,-20 2200,100 2400,40 L2400,120 C2200,180 2000,60 1800,120 C1600,180 1400,60 1200,120 C1000,180 800,60 600,120 C400,180 200,60 0,120 Z"
-            />
-          </svg>
         </div>
       </section>
 
