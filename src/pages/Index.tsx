@@ -15,11 +15,13 @@ import playground from "@/assets/playground.jpg";
 import contactKids from "@/assets/contact-kids.jpg";
 import facility1 from "@/assets/facility-1.jpg";
 import facility2 from "@/assets/facility-2.jpg";
+import facility3 from "@/assets/facility-classroom.jpg";
+import facility4 from "@/assets/facility-play.jpg";
 import sonsolesBuilding from "@/assets/sonsoles-building.jpg";
 import { useEffect, useState } from "react";
 
 const Index = () => {
-  const facilityImages = [facility1, facility2];
+  const facilityImages = [facility1, facility2, facility3, facility4];
   const [facilityIndex, setFacilityIndex] = useState(0);
   useEffect(() => {
     const id = setInterval(() => {
@@ -229,17 +231,22 @@ const Index = () => {
           </div>
           <div className="relative">
             <div className="relative w-full aspect-square rounded-[2rem] shadow-playful overflow-hidden">
-              {facilityImages.map((src, i) => (
-                <img
-                  key={src}
-                  src={src}
-                  alt="Niños jugando en el patio de Sonsoles"
-                  loading="lazy"
-                  width={1280}
-                  height={1280}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === facilityIndex ? "opacity-100" : "opacity-0"}`}
-                />
-              ))}
+              <div
+                className="flex h-full w-full transition-transform duration-1000 ease-in-out"
+                style={{ transform: `translateX(-${facilityIndex * 100}%)` }}
+              >
+                {facilityImages.map((src) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt="Facilidades del Preescolar Sonsoles"
+                    loading="lazy"
+                    width={1280}
+                    height={1280}
+                    className="w-full h-full flex-shrink-0 object-cover"
+                  />
+                ))}
+              </div>
             </div>
             <div className="absolute -top-5 -right-5 bg-accent text-accent-foreground rounded-2xl p-4 shadow-soft animate-float-slow">
               <div className="text-3xl font-black" style={{ fontFamily: 'Fraunces, serif' }}>+15</div>
