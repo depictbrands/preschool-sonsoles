@@ -40,6 +40,46 @@ const Index = () => {
       script.async = true;
       document.body.appendChild(script);
     }
+
+    // Elfsight widgets render inside Shadow DOM, so external CSS can't style
+    // their inputs. Inject a stylesheet into each shadow root so form fields
+    // have readable dark text on their light backgrounds.
+    const FORM_STYLES = `
+      input, textarea, select {
+        color: #1f2937 !important;
+        -webkit-text-fill-color: #1f2937 !important;
+        caret-color: #1f2937 !important;
+      }
+      input::placeholder, textarea::placeholder {
+        color: #6b7280 !important;
+        -webkit-text-fill-color: #6b7280 !important;
+        opacity: 1 !important;
+      }
+    `;
+
+    const styledRoots = new WeakSet<ShadowRoot>();
+    const injectStyles = (root: ShadowRoot) => {
+      if (styledRoots.has(root)) return;
+      styledRoots.add(root);
+      const style = document.createElement("style");
+      style.setAttribute("data-elfsight-fix", "true");
+      style.textContent = FORM_STYLES;
+      root.appendChild(style);
+    };
+
+    const scanForShadowRoots = (node: Element | Document) => {
+      const elements = node.querySelectorAll('[class*="elfsight-app-"], [class*="elfsight-app-"] *');
+      elements.forEach((el) => {
+        const sr = (el as Element & { shadowRoot?: ShadowRoot }).shadowRoot;
+        if (sr) {
+          injectStyles(sr);
+          scanForShadowRoots(sr as unknown as Document);
+        }
+      });
+    };
+
+    const interval = setInterval(() => scanForShadowRoots(document), 800);
+    return () => clearInterval(interval);
   }, []);
 
   return (
