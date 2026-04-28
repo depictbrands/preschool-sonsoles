@@ -52,7 +52,7 @@ const Index = () => {
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-ink">
             <a href="#sobre" className="hover:text-primary transition-colors">Sobre Nosotros</a>
-            <a href="#metodologia" className="hover:text-primary transition-colors">Metodología</a>
+            <a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Metodología</a>
             <a href="#facilidades" className="hover:text-primary transition-colors">Facilidades</a>
             <a href="#testimonios" className="hover:text-primary transition-colors">Testimonios</a>
             <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
@@ -133,7 +133,7 @@ const Index = () => {
       <section id="sobre" className="bg-muted py-20">
         <div className="container text-center max-w-3xl mb-14">
           <h2 className="text-4xl sm:text-5xl text-ink mb-5">Sembrando excelencia en el corazón de la familia puertorriqueña.</h2>
-          <p className="text-lg text-muted-foreground">Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
+          <p className="text-lg text-muted-foreground font-bold">Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
         </div>
 
         <div className="container grid md:grid-cols-3 gap-6 mb-16">
@@ -144,7 +144,7 @@ const Index = () => {
           ].map((item, i) => (
             <div key={i} className={`${item.color} rounded-3xl p-8 shadow-soft hover:-translate-y-1 transition-transform`}>
               <item.icon className="h-10 w-10 mb-4 opacity-90" />
-              <p className="text-2xl font-bold leading-tight" style={{ fontFamily: 'Fraunces, serif' }}>{item.text}</p>
+              <p className="text-2xl font-bold leading-tight font-sans">{item.text}</p>
             </div>
           ))}
         </div>
@@ -161,7 +161,7 @@ const Index = () => {
             />
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-7">
-            <Button asChild variant="sun" size="xl"><a href="#metodologia">Conoce nuestro programa</a></Button>
+            <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
           </div>
         </div>
       </section>
@@ -176,7 +176,7 @@ const Index = () => {
         />
         <div className="relative z-10 container py-24">
           <div className="max-w-2xl mx-auto mb-14 text-center">
-            <span className="text-primary font-bold uppercase tracking-wider text-sm">Metodología</span>
+            <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Metodología</span>
             <h2 className="text-4xl sm:text-5xl text-ink mt-3">Aprender jugando, crecer con propósito.</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -243,7 +243,7 @@ const Index = () => {
       <section id="testimonios" className="py-24 bg-muted">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-primary font-bold uppercase tracking-wider text-sm">Testimonios</span>
+            <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Testimonios</span>
             <h2 className="text-4xl sm:text-5xl text-ink mt-3">Deja que nuestros padres te cuenten.</h2>
             <p className="text-muted-foreground mt-4">Por qué las familias eligen Sonsoles.</p>
           </div>
