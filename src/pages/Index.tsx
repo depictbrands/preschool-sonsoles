@@ -219,6 +219,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-12 sm:h-16 bg-primary wave-divider" aria-hidden="true" />
       </section>
 
       {/* INTRO */}
