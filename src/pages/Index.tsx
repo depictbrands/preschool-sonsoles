@@ -129,7 +129,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="relative h-24 sm:h-32 -mb-1 overflow-visible">
+        <div className="relative h-24 sm:h-32 -mt-12 sm:-mt-16 -mb-12 sm:-mb-16 z-10 overflow-visible pointer-events-none">
           <svg
             className="absolute inset-y-0 left-0 h-full w-[200%] animate-wave-slide text-primary"
             viewBox="0 0 2400 160"
