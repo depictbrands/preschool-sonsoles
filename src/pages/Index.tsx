@@ -27,6 +27,18 @@ const Index = () => {
     }, 4000);
     return () => clearInterval(id);
   }, [facilityImages.length]);
+
+  useEffect(() => {
+    const scriptId = "elfsight-platform-script";
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://elfsightcdn.com/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Announcement bar */}
