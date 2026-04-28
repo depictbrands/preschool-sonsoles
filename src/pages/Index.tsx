@@ -3,7 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, MessageCircle } from "lucide-react";
+import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
@@ -36,7 +37,7 @@ const Index = () => {
           className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
           🎉 MATRÍCULA ABIERTA — Comunícate por
-          <MessageCircle className="h-5 w-5" fill="currentColor" />
+          <WhatsAppIcon className="h-5 w-5" />
           <span className="underline">787-993-5623</span>
         </a>
       </div>
