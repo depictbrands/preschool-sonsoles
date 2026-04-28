@@ -53,12 +53,6 @@ const ParentPortal = () => {
 
   return (
     <div className="min-h-screen bg-muted">
-      <Helmet>
-        <title>Portal de Padres | Preescolar Sonsoles</title>
-        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
-        <meta name="googlebot" content="noindex, nofollow" />
-      </Helmet>
-
       <div className="container py-10">
         <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-ink mb-8">
           <ArrowLeft className="h-4 w-4" /> Volver al inicio
