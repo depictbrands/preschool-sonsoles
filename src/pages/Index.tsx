@@ -15,6 +15,14 @@ import facility2 from "@/assets/facility-2.jpg";
 import { useEffect, useState } from "react";
 
 const Index = () => {
+  const facilityImages = [facility1, facility2];
+  const [facilityIndex, setFacilityIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setFacilityIndex((i) => (i + 1) % facilityImages.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, [facilityImages.length]);
   return (
     <div className="min-h-screen bg-background">
       {/* Announcement bar */}
