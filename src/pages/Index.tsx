@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users } from "lucide-react";
+import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.gif";
 import heroKids from "@/assets/hero-kids.jpg";
 import kidsDrawing from "@/assets/kids-drawing.jpg";
@@ -14,7 +14,17 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Announcement bar */}
       <div className="bg-accent text-accent-foreground text-center text-sm font-bold py-2.5 px-4">
-        🎉 MATRÍCULA ABIERTA — Comunícate por WhatsApp: <a href="tel:7879935623" className="underline">787-993-5623</a>
+        <a
+          href="https://wa.me/17879935623"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Comunícate por WhatsApp al 787-993-5623"
+          className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
+        >
+          🎉 MATRÍCULA ABIERTA — Comunícate por
+          <MessageCircle className="h-5 w-5" fill="currentColor" />
+          <span className="underline">787-993-5623</span>
+        </a>
       </div>
 
       {/* Nav */}
