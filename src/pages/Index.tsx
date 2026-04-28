@@ -8,6 +8,7 @@ import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
 import kidsDrawing from "@/assets/kids-drawing.gif";
+import duckAnimation from "@/assets/duck-animation.gif";
 import playground from "@/assets/playground.jpg";
 
 const Index = () => {
@@ -137,7 +138,7 @@ const Index = () => {
       {/* METODOLOGÍA */}
       <section id="metodologia" className="relative w-full overflow-hidden" style={{ aspectRatio: "2241 / 1600" }}>
         <img
-          src={kidsDrawing}
+          src={duckAnimation}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
