@@ -185,13 +185,14 @@ const Index = () => {
       </section>
 
       {/* METODOLOGÍA */}
-      <section id="metodologia" className="relative w-full overflow-hidden" style={{ aspectRatio: "2241 / 1600" }}>
+      <section id="metodologia" className="relative w-full overflow-hidden">
         <img
           src={duckAnimation}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
         <div className="relative z-10 container py-24">
           <div className="max-w-2xl mx-auto mb-14 text-center">
             <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Metodología</span>
