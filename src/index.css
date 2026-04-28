@@ -129,3 +129,19 @@
   }
   .animate-wave-slide { animation: wave-slide 12s linear infinite; }
 }
+
+/* Ensure Elfsight form inputs have readable dark text on their light backgrounds */
+[class^="elfsight-app-"] input,
+[class^="elfsight-app-"] textarea,
+[class^="elfsight-app-"] select {
+  color: #1f2937 !important;
+  -webkit-text-fill-color: #1f2937 !important;
+  caret-color: #1f2937 !important;
+}
+
+[class^="elfsight-app-"] input::placeholder,
+[class^="elfsight-app-"] textarea::placeholder {
+  color: #6b7280 !important;
+  -webkit-text-fill-color: #6b7280 !important;
+  opacity: 1 !important;
+}
