@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Volume2, VolumeX } from "lucide-react";
 import video1 from "@/assets/testimonial-1.mov";
 import video2 from "@/assets/testimonial-2.mov";
 import video3 from "@/assets/testimonial-3.mov";
@@ -22,6 +22,7 @@ const RADIUS = "0.34419rem";
 
 const VideoTestimonials = () => {
   const [active, setActive] = useState(0);
+  const [unmutedIdx, setUnmutedIdx] = useState<number | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   // Play active video, pause others
@@ -35,7 +36,27 @@ const VideoTestimonials = () => {
         v.pause();
       }
     });
+    setUnmutedIdx(null);
   }, [active]);
+
+  const toggleSound = (idx: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const v = videoRefs.current[idx];
+    if (!v) return;
+    if (unmutedIdx === idx) {
+      v.muted = true;
+      setUnmutedIdx(null);
+    } else {
+      // Mute all others
+      videoRefs.current.forEach((other, i) => {
+        if (other && i !== idx) other.muted = true;
+      });
+      v.muted = false;
+      v.play().catch(() => {});
+      setUnmutedIdx(idx);
+      setActive(idx);
+    }
+  };
 
   const total = testimonials.length;
   const prev = () => setActive((i) => (i - 1 + total) % total);
@@ -85,6 +106,17 @@ const VideoTestimonials = () => {
                   {!isActive && (
                     <div className="absolute inset-0 bg-ink/30 hover:bg-ink/0 transition-colors" />
                   )}
+                  <button
+                    onClick={(e) => toggleSound(idx, e)}
+                    aria-label={unmutedIdx === idx ? "Silenciar" : "Activar sonido"}
+                    className="absolute bottom-3 right-3 z-10 bg-ink/60 hover:bg-ink/80 text-card rounded-full p-2 backdrop-blur-sm transition-colors"
+                  >
+                    {unmutedIdx === idx ? (
+                      <Volume2 className="h-4 w-4" />
+                    ) : (
+                      <VolumeX className="h-4 w-4" />
+                    )}
+                  </button>
                 </div>
               );
             })}
