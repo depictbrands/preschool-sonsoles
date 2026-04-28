@@ -37,7 +37,7 @@ const Index = () => {
           aria-label="Comunícate por WhatsApp al 787-993-5623"
           className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
-          🎉 MATRÍCULA ABIERTA — Comunícate por
+          MATRÍCULA ABIERTA — Comunícate por{"\n"}
           <WhatsAppIcon className="h-5 w-5" />
           <span className="underline">787-993-5623</span>
         </a>
