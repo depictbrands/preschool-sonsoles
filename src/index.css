@@ -8,6 +8,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'ChildsPlayground';
+  src: url('/fonts/ChildsPlaygroundRegular.woff2') format('woff2'),
+       url('/fonts/ChildsPlaygroundRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
