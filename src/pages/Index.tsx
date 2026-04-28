@@ -208,7 +208,7 @@ const Index = () => {
                 <div className={`${f.bg} ${f.color} w-14 h-14 rounded-2xl flex items-center justify-center mb-5`}>
                   <f.icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold text-ink mb-2" style={{ fontFamily: "'ChildsPlayground', cursive" }}>{f.title}</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-ink mb-2" style={{ fontFamily: "'ChildsPlayground', cursive" }}>{f.title}</h3>
                 <p className="text-muted-foreground text-sm">{f.desc}</p>
               </Card>
             ))}
