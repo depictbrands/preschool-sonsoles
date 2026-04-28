@@ -195,7 +195,19 @@ const Index = () => {
             <Button asChild variant="sun" size="xl"><a href="#contacto">Visítanos</a></Button>
           </div>
           <div className="relative">
-            <img src={playground} alt="Niños jugando en el patio de Sonsoles" loading="lazy" width={1280} height={1280} className="rounded-[2rem] shadow-playful w-full object-cover aspect-square" />
+            <div className="relative w-full aspect-square rounded-[2rem] shadow-playful overflow-hidden">
+              {facilityImages.map((src, i) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt="Niños jugando en el patio de Sonsoles"
+                  loading="lazy"
+                  width={1280}
+                  height={1280}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === facilityIndex ? "opacity-100" : "opacity-0"}`}
+                />
+              ))}
+            </div>
             <div className="absolute -top-5 -right-5 bg-accent text-accent-foreground rounded-2xl p-4 shadow-soft animate-float-slow">
               <div className="text-3xl font-black" style={{ fontFamily: 'Fraunces, serif' }}>+25</div>
               <div className="text-xs font-bold">Años educando</div>
