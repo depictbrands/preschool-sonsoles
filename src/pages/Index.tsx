@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Instagram, Facebook, Phone, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.gif";
+import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
 import kidsDrawing from "@/assets/kids-drawing.jpg";
 import playground from "@/assets/playground.jpg";
@@ -182,6 +183,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* VIDEO TESTIMONIOS */}
+      <VideoTestimonials />
 
       {/* TESTIMONIOS */}
       <section id="testimonios" className="py-24 bg-muted">
