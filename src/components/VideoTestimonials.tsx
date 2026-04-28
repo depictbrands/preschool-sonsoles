@@ -14,8 +14,8 @@ const testimonials: VideoTestimonial[] = [
   { videoUrl: video4 },
 ];
 
-const ACTIVE_W = "47.9075rem";
-const ACTIVE_H = "46.875rem";
+const ACTIVE_W = "720px";
+const ACTIVE_H = "1280px";
 const SIDE_W = "6.81444rem";
 const SIDE_H = "41.57488rem";
 const RADIUS = "0.34419rem";
@@ -88,8 +88,9 @@ const VideoTestimonials = () => {
                   style={{
                     width: isActive ? ACTIVE_W : SIDE_W,
                     height: isActive ? ACTIVE_H : SIDE_H,
-                    maxWidth: isActive ? "min(90vw, 47.9075rem)" : SIDE_W,
-                    maxHeight: "70vh",
+                    maxWidth: isActive ? "min(90vw, 720px)" : SIDE_W,
+                    maxHeight: "80vh",
+                    aspectRatio: isActive ? "720 / 1280" : undefined,
                     borderRadius: RADIUS,
                   }}
                 >
