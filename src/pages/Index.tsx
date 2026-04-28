@@ -8,7 +8,7 @@ import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import heroKids from "@/assets/hero-kids.jpg";
-import heroBgVideo from "@/assets/hero-bg.mp4";
+
 import kidsDrawing from "@/assets/kids-drawing.gif";
 import duckAnimation from "@/assets/duck-animation.gif";
 import playground from "@/assets/playground.jpg";
@@ -68,7 +68,7 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative overflow-hidden">
+      <section id="top" className="relative overflow-hidden isolate">
         <video
           src="/website-hero.mp4"
           autoPlay
