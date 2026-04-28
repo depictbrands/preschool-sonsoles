@@ -317,7 +317,7 @@ const Index = () => {
           <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
             <iframe
               title="Ubicación Preescolar Sonsoles"
-              src="https://www.google.com/maps?q=Preescolar+Sonsoles+Puerto+Rico&output=embed"
+              src="https://www.google.com/maps?q=C.+Madre+Teresa+Jornet,+San+Juan,+00926,+Puerto+Rico&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
