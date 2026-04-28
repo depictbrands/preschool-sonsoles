@@ -59,8 +59,8 @@ const Index = () => {
             <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="https://instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-5 w-5" /></a>
-            <a href="https://facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary"><Facebook className="h-5 w-5" /></a>
+            <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-5 w-5" /></a>
+            <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary"><Facebook className="h-5 w-5" /></a>
             <Button asChild variant="hero" size="lg" className="hidden sm:inline-flex">
               <a href="#contacto">Matricúlate</a>
             </Button>
@@ -354,8 +354,8 @@ const Index = () => {
           <div>
             <h4 className="font-bold mb-3 text-base">Síguenos</h4>
             <div className="flex gap-3">
-              <a href="https://instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-card/10 hover:bg-primary p-2.5 rounded-full transition-colors"><Instagram className="h-5 w-5" /></a>
-              <a href="https://facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-card/10 hover:bg-secondary p-2.5 rounded-full transition-colors"><Facebook className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-card/10 hover:bg-primary p-2.5 rounded-full transition-colors"><Instagram className="h-5 w-5" /></a>
+              <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-card/10 hover:bg-secondary p-2.5 rounded-full transition-colors"><Facebook className="h-5 w-5" /></a>
             </div>
           </div>
         </div>
