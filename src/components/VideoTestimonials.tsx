@@ -18,7 +18,7 @@ const ACTIVE_W = "720px";
 const ACTIVE_H = "1280px";
 const SIDE_W = "6.81444rem";
 const SIDE_H = "41.57488rem";
-const RADIUS = "0.34419rem";
+const RADIUS = "1.5rem";
 
 const VideoTestimonials = () => {
   const [active, setActive] = useState(0);
