@@ -10,6 +10,7 @@ import heroKids from "@/assets/hero-kids.jpg";
 import kidsDrawing from "@/assets/kids-drawing.gif";
 import duckAnimation from "@/assets/duck-animation.gif";
 import playground from "@/assets/playground.jpg";
+import contactKids from "@/assets/contact-kids.jpg";
 import facility1 from "@/assets/facility-1.jpg";
 import facility2 from "@/assets/facility-2.jpg";
 import { useEffect, useState } from "react";
@@ -281,7 +282,7 @@ const Index = () => {
             </Card>
           </div>
           <div className="hidden lg:block relative">
-            <img src={playground} alt="Niños de Sonsoles en el patio" loading="lazy" width={1280} height={1280} className="rounded-[2rem] shadow-playful w-full object-cover aspect-[4/5]" />
+            <img src={contactKids} alt="Niños de Sonsoles en el patio" loading="lazy" width={1280} height={1280} className="rounded-[2rem] shadow-playful w-full object-cover aspect-[4/5]" />
           </div>
         </div>
       </section>
