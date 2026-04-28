@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'SoupBone';
-  src: url('/src/assets/fonts/SoupBone_Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('/fonts/SoupBone_Regular.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
