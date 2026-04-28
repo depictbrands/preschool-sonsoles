@@ -133,7 +133,7 @@ const Index = () => {
       <section id="sobre" className="bg-muted py-20">
         <div className="container text-center max-w-3xl mb-14">
           <h2 className="text-4xl sm:text-5xl text-ink mb-5">Sembrando excelencia en el corazón de la familia puertorriqueña.</h2>
-          <p className="text-lg text-muted-foreground">Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
+          <p className="text-lg text-muted-foreground font-bold">Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
         </div>
 
         <div className="container grid md:grid-cols-3 gap-6 mb-16">
