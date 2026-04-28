@@ -173,16 +173,6 @@ const Index = () => {
       <section
         id="top"
         className="relative overflow-hidden isolate pb-16 sm:pb-24"
-        style={{
-          WebkitMaskImage:
-            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1000' preserveAspectRatio='none'><path fill='black' d='M0,0 L1200,0 L1200,920 C1000,1000 800,860 600,940 C400,1020 200,880 0,960 Z'/></svg>\")",
-            maskImage:
-            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1000' preserveAspectRatio='none'><path fill='black' d='M0,0 L1200,0 L1200,920 C1000,1000 800,860 600,940 C400,1020 200,880 0,960 Z'/></svg>\")",
-          WebkitMaskSize: "100% 100%",
-          maskSize: "100% 100%",
-          WebkitMaskRepeat: "no-repeat",
-          maskRepeat: "no-repeat",
-        }}
       >
         <video
           src="/website-hero.mp4"
@@ -229,6 +219,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-12 sm:h-16 bg-primary wave-divider" aria-hidden="true" />
       </section>
 
       {/* INTRO */}
