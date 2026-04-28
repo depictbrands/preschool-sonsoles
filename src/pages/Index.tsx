@@ -27,6 +27,18 @@ const Index = () => {
     }, 4000);
     return () => clearInterval(id);
   }, [facilityImages.length]);
+
+  useEffect(() => {
+    const scriptId = "elfsight-platform-script";
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://elfsightcdn.com/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Announcement bar */}
@@ -279,27 +291,7 @@ const Index = () => {
           <div>
             <h2 className="text-4xl sm:text-5xl text-ink mb-5">¿Listo para matricular a tu hijo(a)?</h2>
             <p className="text-ink/80 text-lg mb-8">Envíanos un breve mensaje sobre lo que buscas y te orientaremos con los próximos pasos dentro de un día laborable.</p>
-            <Card className="bg-primary text-primary-foreground rounded-3xl p-8 shadow-playful border-0">
-              <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); alert('¡Gracias! Te contactaremos pronto.'); }}>
-                <div>
-                  <Label htmlFor="phone" className="text-primary-foreground font-semibold">Número de teléfono *</Label>
-                  <Input id="phone" type="tel" required className="mt-2 bg-card text-foreground border-0 h-12 rounded-xl" placeholder="787-000-0000" />
-                </div>
-                <div>
-                  <Label htmlFor="name" className="text-primary-foreground font-semibold">Nombre y Apellido</Label>
-                  <Input id="name" className="mt-2 bg-card text-foreground border-0 h-12 rounded-xl" />
-                </div>
-                <div>
-                  <Label htmlFor="email" className="text-primary-foreground font-semibold">Email *</Label>
-                  <Input id="email" type="email" required className="mt-2 bg-card text-foreground border-0 h-12 rounded-xl" />
-                </div>
-                <div>
-                  <Label htmlFor="msg" className="text-primary-foreground font-semibold">¿Cuándo es el mejor momento para llamarte?</Label>
-                  <Textarea id="msg" rows={3} className="mt-2 bg-card text-foreground border-0 rounded-xl resize-none" />
-                </div>
-                <Button type="submit" variant="hero" size="xl" className="w-full">Contáctame</Button>
-              </form>
-            </Card>
+            <div className="elfsight-app-f6462d1d-0531-4524-91a2-7492f550169d" data-elfsight-app-lazy></div>
           </div>
           <div className="hidden lg:block relative">
             <img src={contactKids} alt="Niños de Sonsoles en el patio" loading="lazy" width={1280} height={1280} className="rounded-[2rem] shadow-playful w-full object-cover aspect-[4/5]" />
