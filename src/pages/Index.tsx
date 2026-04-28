@@ -3,7 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Facebook, Phone, Mail, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, Lock } from "lucide-react";
+import { Instagram, Facebook, Phone, Mail, Star, Heart, Sparkles, Apple, Shield, BookOpen, Music, Palette, Users, Lock, Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
@@ -73,14 +74,57 @@ const Index = () => {
             <a href="#ubicacion" className="hover:text-primary transition-colors">Contacto</a>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-5 w-5" /></a>
-            <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary"><Facebook className="h-5 w-5" /></a>
+            <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary hidden sm:inline-flex"><Instagram className="h-5 w-5" /></a>
+            <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary hidden sm:inline-flex"><Facebook className="h-5 w-5" /></a>
             <Button asChild variant="outlineWarm" size="lg" className="hidden md:inline-flex">
               <a href="/portal-padres"><Lock className="h-4 w-4" /> Portal de Padres</a>
             </Button>
             <Button asChild variant="hero" size="lg" className="hidden sm:inline-flex">
               <a href="#contacto">Matricúlate</a>
             </Button>
+
+            {/* Mobile menu */}
+            <Sheet>
+              <SheetTrigger asChild className="md:hidden">
+                <Button variant="ghost" size="icon" aria-label="Abrir menú">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[85%] max-w-sm">
+                <SheetTitle className="text-left text-lg font-bold text-ink mb-6" style={{ fontFamily: "'SoupBone', serif" }}>
+                  Menú
+                </SheetTitle>
+                <nav className="flex flex-col gap-1 text-base font-semibold text-ink">
+                  {[
+                    { href: '#sobre', label: 'Sobre Nosotros' },
+                    { href: '#metodologia', label: 'Metodología' },
+                    { href: '#facilidades', label: 'Facilidades' },
+                    { href: '#testimonios', label: 'Testimonios' },
+                    { href: '#ubicacion', label: 'Contacto' },
+                  ].map((item) => (
+                    <SheetClose asChild key={item.href}>
+                      <a href={item.href} className="py-3 px-2 rounded-lg hover:bg-muted transition-colors">{item.label}</a>
+                    </SheetClose>
+                  ))}
+                </nav>
+                <div className="mt-6 flex flex-col gap-3">
+                  <SheetClose asChild>
+                    <Button asChild variant="outlineWarm" size="lg" className="w-full">
+                      <a href="/portal-padres"><Lock className="h-4 w-4" /> Portal de Padres</a>
+                    </Button>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Button asChild variant="hero" size="lg" className="w-full">
+                      <a href="#contacto">Matricúlate</a>
+                    </Button>
+                  </SheetClose>
+                </div>
+                <div className="mt-8 flex items-center gap-5 justify-center">
+                  <a href="https://www.instagram.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ink hover:text-primary"><Instagram className="h-6 w-6" /></a>
+                  <a href="https://www.facebook.com/preschoolsonsoles" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink hover:text-secondary"><Facebook className="h-6 w-6" /></a>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
