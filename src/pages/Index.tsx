@@ -176,7 +176,7 @@ const Index = () => {
         />
         <div className="relative z-10 container py-24">
           <div className="max-w-2xl mx-auto mb-14 text-center">
-            <span className="text-primary font-bold uppercase tracking-wider text-sm">Metodología</span>
+            <span className="font-bold uppercase tracking-wider text-sm bg-secondary text-primary-foreground mx-[10px] my-[10px] px-[10px] py-[10px] rounded-sm">Metodología</span>
             <h2 className="text-4xl sm:text-5xl text-ink mt-3">Aprender jugando, crecer con propósito.</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
