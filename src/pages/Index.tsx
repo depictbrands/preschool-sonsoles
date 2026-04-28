@@ -222,7 +222,7 @@ const Index = () => {
               ))}
             </div>
             <div className="absolute -top-5 -right-5 bg-accent text-accent-foreground rounded-2xl p-4 shadow-soft animate-float-slow">
-              <div className="text-3xl font-black" style={{ fontFamily: 'Fraunces, serif' }}>+25</div>
+              <div className="text-3xl font-black" style={{ fontFamily: 'Fraunces, serif' }}>+15</div>
               <div className="text-xs font-bold">Años educando</div>
             </div>
           </div>
