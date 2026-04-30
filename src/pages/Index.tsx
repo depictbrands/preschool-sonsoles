@@ -273,11 +273,15 @@ const Index = () => {
                     />
                     <div className="flex flex-col justify-center text-center md:text-left max-w-xl">
                       <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] mb-5 tracking-tight">
-                        Griselle Bou
+                        Griselle Bou de Blanco
                       </h3>
-                      <p className="text-base sm:text-lg leading-relaxed text-ink/90 mb-8">
-                        Directora de Preescolar Sonsoles. Música nominada a un Latin Grammy y autora publicada de <em>Canciones y Cantos Juegos del Folkore Puertorriqueño</em>. Directora de la Junta del Coro Niño San Juan. Maestría en Educación Temprana, con 40 años de experiencia en educación musical infantil.
-                      </p>
+                      <div className="space-y-3 text-sm sm:text-base leading-relaxed text-ink/90 mb-8">
+                        <p>Nació en San Juan de Puerto Rico. Comenzó su educación musical a temprana edad con la pianista y profesora Luz N. de Hutchinson, ingresando en el Conservatorio de Música de Puerto Rico, donde realizó estudios en piano.</p>
+                        <p>Obtuvo un bachillerato en Artes y una maestría en Educación del Niño de la Universidad de Puerto Rico. Ha estudiado los métodos musicales de Suzuki, Dalcroze y Orff y es maestra licenciada del método "Kindermusik".</p>
+                        <p>Desde 1979, ha trabajado con el Coro de Niños de San Juan como maestra de música y directora del Coro de Preparatoria y del Coro Elemental. Además, se ha desempeñado como maestra de música y directora de coro en escuelas privadas a nivel elemental y superior y como profesora de apreciación musical a nivel universitario.</p>
+                        <p>Es autora del libro <em>Canciones y cantos-juegos infantiles del folklore puertorriqueño</em> y, recientemente, del disco compacto que lo complementa, galardonado al ser nominado para los Grammys Latinos como Mejor Álbum de Música Latina para Niños en la 7ma entrega de premios celebrada en Nueva York, en noviembre del 2006.</p>
+                        <p>En la actualidad, se desempeña como directora de coro en el Coro de Niños de San Juan.</p>
+                      </div>
                       <div>
                         <Button asChild size="lg" className="bg-ink text-card hover:bg-ink/90 shadow-playful hover:-translate-y-0.5 transition-all">
                           <a href="mailto:grisellebou@gmail.com">
