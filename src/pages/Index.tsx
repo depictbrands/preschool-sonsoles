@@ -438,14 +438,14 @@ const Index = () => {
           <p className="text-lg text-muted-foreground font-bold">Encuéntranos fácilmente en el mapa.</p>
         </div>
         <div className="container grid md:grid-cols-2 gap-6">
-          <div className="rounded-3xl overflow-hidden shadow-playful border-primary aspect-[16/9] border-0">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-primary aspect-[16/9]">
             <img
               src={sonsolesBuilding}
               alt="Edificio Preescolar Sonsoles"
               className="w-full h-full object-cover bg-primary border-0 border-primary-foreground"
             />
           </div>
-          <div className="rounded-3xl overflow-hidden shadow-playful border-card aspect-[16/9] border-0">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
             <iframe
               title="Ubicación Preescolar Sonsoles"
               src="https://www.google.com/maps?q=C.+Madre+Teresa+Jornet,+San+Juan,+00926,+Puerto+Rico&output=embed"
@@ -468,7 +468,7 @@ const Index = () => {
               <img src={logo} alt="" className="h-12 w-12" />
               <span className="text-lg" style={{ fontFamily: "'SoupBone', serif", fontWeight: 600 }}>Preescolar Sonsoles</span>
             </div>
-            <p className="text-sm opacity-70">¡Nuestros Niños son Soles de Esperanza!</p>
+            <p className="text-sm opacity-70">Sembrando valores, cultivando grandeza desde Puerto Rico.</p>
           </div>
           <div>
             <h4 className="font-bold mb-3 text-base">Contacto</h4>
