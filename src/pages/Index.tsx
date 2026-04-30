@@ -271,7 +271,7 @@ const Index = () => {
                       loading="lazy"
                       className="w-52 sm:w-60 md:w-72 aspect-[3/4] object-cover object-top flex-shrink-0 self-end block"
                     />
-                    <div className="flex flex-col justify-center text-center md:text-left max-w-xl pb-8 sm:pb-14 md:pb-16">
+                    <div className="flex flex-col justify-center text-center md:text-left max-w-xl pb-8 sm:pb-14 md:pb-16 pl-8 md:pl-0">
                       <span className="block font-bold uppercase tracking-[0.18em] text-xs sm:text-sm text-ink/70 mb-3">
                         Fundadora y Directora · Preescolar Sonsoles
                       </span>
