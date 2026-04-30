@@ -264,19 +264,27 @@ const Index = () => {
               {/* Slide 1 — Pink: Founder */}
               <CarouselItem>
                 <div className="rounded-3xl shadow-soft overflow-hidden h-full" style={{ background: "hsl(338 65% 78%)" }}>
-                  <div className="p-8 sm:p-14 md:p-16 flex flex-col justify-center text-ink min-h-[560px] h-full max-w-3xl mx-auto">
-                    <h3 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
-                      Griselle Bou
-                    </h3>
-                    <p className="text-base sm:text-lg leading-relaxed text-ink/90 mb-8 max-w-xl">
-                      Directora de Preescolar Sonsoles. Música nominada a un Latin Grammy y autora publicada de <em>Canciones y Cantos Juegos del Folkore Puertorriqueño</em>. Directora de la Junta del Coro Niño San Juan. Maestría en Educación Temprana, con 40 años de experiencia en educación musical infantil.
-                    </p>
-                    <div>
-                      <Button asChild variant="sun" size="lg">
-                        <a href="mailto:grisellebou@gmail.com">
-                          <Mail className="h-4 w-4" /> Escríbele a Griselle
-                        </a>
-                      </Button>
+                  <div className="p-8 sm:p-14 md:p-16 flex flex-col md:flex-row gap-10 md:gap-12 items-center text-ink min-h-[560px] h-full max-w-5xl mx-auto">
+                    <img
+                      src={founderPhoto}
+                      alt="Griselle Bou, Directora de Preescolar Sonsoles"
+                      loading="lazy"
+                      className="w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full object-cover shadow-soft border-4 border-card flex-shrink-0"
+                    />
+                    <div className="flex flex-col justify-center text-center md:text-left max-w-xl">
+                      <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] mb-5 tracking-tight">
+                        Griselle Bou
+                      </h3>
+                      <p className="text-base sm:text-lg leading-relaxed text-ink/90 mb-8">
+                        Directora de Preescolar Sonsoles. Música nominada a un Latin Grammy y autora publicada de <em>Canciones y Cantos Juegos del Folkore Puertorriqueño</em>. Directora de la Junta del Coro Niño San Juan. Maestría en Educación Temprana, con 40 años de experiencia en educación musical infantil.
+                      </p>
+                      <div>
+                        <Button asChild size="lg" className="bg-ink text-card hover:bg-ink/90 shadow-playful hover:-translate-y-0.5 transition-all">
+                          <a href="mailto:grisellebou@gmail.com">
+                            <Mail className="h-4 w-4" /> Escríbele a Griselle
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
