@@ -300,7 +300,7 @@ const Index = () => {
 
               {/* Slide 2 — Green: Family illustration */}
               <CarouselItem>
-                <div className="rounded-3xl shadow-soft overflow-hidden bg-leaf h-full">
+                <div className="relative rounded-3xl shadow-soft overflow-hidden bg-leaf h-full">
                   <div className="w-full overflow-hidden min-h-[560px] h-full flex items-center justify-center">
                     <img
                       src={kidsDrawing}
@@ -309,16 +309,15 @@ const Index = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
+                  <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 z-10">
+                    <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
+                  </div>
                 </div>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
             <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
           </Carousel>
-
-          <div className="flex justify-center mt-10">
-            <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
-          </div>
         </div>
       </section>
 
