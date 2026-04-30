@@ -27,6 +27,7 @@ import sonsolesBuilding from "@/assets/sonsoles-building.jpg";
 import { useEffect, useState } from "react";
 
 const Index = () => {
+  const sobreAutoplay = useRef(Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }));
   const facilityImages = [facility1, facility2, facility3, facility4];
   const [facilityIndex, setFacilityIndex] = useState(0);
   useEffect(() => {
