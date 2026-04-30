@@ -196,7 +196,7 @@ const Index = () => {
         <div className="container grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 bg-[#413D45] text-white px-4 py-1.5 rounded-full text-sm font-bold mb-6">
-              <Sparkles className="h-4 w-4 text-primary" /> Edades 2 a 4 años · Puerto Rico
+              <Sparkles className="h-4 w-4 text-primary" /> maternal · Puerto Rico
             </div>
             <h1 className="text-5xl sm:text-6xl leading-[1.05] text-white mb-6 lg:text-6xl" style={{ fontFamily: "'ChildsPlayground', cursive" }}>
               Sembrando <span className="text-primary-foreground">valores</span>,<br />
