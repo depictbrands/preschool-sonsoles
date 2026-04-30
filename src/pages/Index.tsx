@@ -264,14 +264,14 @@ const Index = () => {
               {/* Slide 1 — Pink: Founder */}
               <CarouselItem>
                 <div className="rounded-3xl shadow-soft overflow-hidden h-full" style={{ background: "hsl(338 65% 78%)" }}>
-                  <div className="pt-8 sm:pt-14 md:pt-16 px-8 sm:px-14 md:px-16 flex flex-col md:flex-row gap-10 md:gap-12 items-end text-ink min-h-[560px] h-full max-w-5xl mx-auto">
+                  <div className="pt-8 sm:pt-14 md:pt-16 pr-8 sm:pr-14 md:pr-16 flex flex-col md:flex-row gap-10 md:gap-12 items-end text-ink min-h-[560px] h-full max-w-5xl mx-auto">
                     <img
                       src={founderPhoto}
                       alt="Griselle Bou, Directora de Preescolar Sonsoles"
                       loading="lazy"
                       className="w-52 sm:w-60 md:w-72 aspect-[3/4] object-cover object-top flex-shrink-0 self-end block"
                     />
-                    <div className="flex flex-col justify-center text-center md:text-left max-w-xl pb-8 sm:pb-14 md:pb-16">
+                    <div className="flex flex-col justify-center text-center md:text-left max-w-xl pb-8 sm:pb-14 md:pb-16 pl-8 md:pl-0">
                       <span className="block font-bold uppercase tracking-[0.18em] text-xs sm:text-sm text-ink/70 mb-3">
                         Fundadora y Directora · Preescolar Sonsoles
                       </span>
