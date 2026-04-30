@@ -84,16 +84,16 @@
   * { @apply border-border; }
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Sora', system-ui, sans-serif;
     font-weight: 600;
   }
   h1, h2, h3, h4 {
-    font-family: 'Sour Gummy', 'Inter', system-ui, sans-serif;
+    font-family: 'Sour Gummy', 'Sora', system-ui, sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   p {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Sora', system-ui, sans-serif;
     font-weight: 600;
   }
 }
