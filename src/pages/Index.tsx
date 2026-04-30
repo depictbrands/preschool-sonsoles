@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/com
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
+import Performances from "@/components/Performances";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import heroKids from "@/assets/hero-kids.jpg";
 import founderPhoto from "@/assets/founder-griselle.jpg";
