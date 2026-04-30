@@ -14,14 +14,14 @@ const performances: Performance[] = [
   {
     title: "Día de Juegos",
     description:
-      "Un día lleno de risas, movimiento y aprendizaje al aire libre.",
-    videoUrl: "",
+      "Un día familiar lleno de risas, movimiento y cariño.",
+    videoUrl: "/compressed - 2026 Dia de Juegos.mp4",
   },
   {
     title: "Programa de Navidad",
     description:
       "Nuestros niños celebrando la magia de la Navidad sobre el escenario.",
-    videoUrl: "",
+    videoUrl: "/compressed - Programa de Navidad 2025 60s.mp4",
   },
 ];
 
@@ -73,34 +73,26 @@ const PerformanceCard = ({ item }: { item: Performance }) => {
           </div>
         )}
 
-        {!playing && item.videoUrl && (
-          <div className="absolute inset-0 flex items-center justify-center bg-ink/30">
-            <div className="bg-card/95 text-ink rounded-full p-5 shadow-playful">
-              <Play className="h-8 w-8 fill-ink" />
-            </div>
-          </div>
-        )}
-
-        {playing && (
+        {item.videoUrl && (
           <button
-            onClick={(e) => {
-              e.stopPropagation();
-              togglePlay();
-            }}
-            aria-label="Pausar"
-            className="absolute top-3 left-3 z-10 bg-ink/60 hover:bg-ink/80 text-card rounded-full p-2"
+            onClick={toggleMute}
+            aria-label={muted ? "Activar sonido" : "Silenciar"}
+            className="absolute bottom-3 left-3 z-10 bg-ink/60 hover:bg-ink/80 text-card rounded-full p-2"
           >
-            <Pause className="h-4 w-4" />
+            {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
           </button>
         )}
 
         {item.videoUrl && (
           <button
-            onClick={toggleMute}
-            aria-label={muted ? "Activar sonido" : "Silenciar"}
-            className="absolute bottom-3 right-3 z-10 bg-ink/60 hover:bg-ink/80 text-card rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation();
+              togglePlay();
+            }}
+            aria-label={playing ? "Pausar" : "Reproducir"}
+            className="absolute bottom-3 right-3 z-10 bg-card/95 hover:bg-card text-ink rounded-full p-3 shadow-playful"
           >
-            {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+            {playing ? <Pause className="h-5 w-5 fill-ink" /> : <Play className="h-5 w-5 fill-ink" />}
           </button>
         )}
       </div>
