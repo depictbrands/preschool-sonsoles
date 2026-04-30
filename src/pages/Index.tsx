@@ -468,7 +468,7 @@ const Index = () => {
               <img src={logo} alt="" className="h-12 w-12" />
               <span className="text-lg" style={{ fontFamily: "'SoupBone', serif", fontWeight: 600 }}>Preescolar Sonsoles</span>
             </div>
-            <p className="text-sm opacity-70">Sembrando valores, cultivando grandeza desde Puerto Rico.</p>
+            <p className="text-sm opacity-70">¡Nuestros Niños son Soles de Esperanza!</p>
           </div>
           <div>
             <h4 className="font-bold mb-3 text-base">Contacto</h4>
