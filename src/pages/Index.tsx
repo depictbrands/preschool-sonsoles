@@ -272,6 +272,9 @@ const Index = () => {
                       className="w-52 sm:w-60 md:w-72 aspect-[3/4] rounded-2xl object-cover shadow-soft border-card flex-shrink-0 border-0"
                     />
                     <div className="flex flex-col justify-center text-center md:text-left max-w-xl">
+                      <span className="block font-bold uppercase tracking-[0.18em] text-xs sm:text-sm text-ink/70 mb-3">
+                        Fundadora y Directora · Preescolar Sonsoles
+                      </span>
                       <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] mb-5 tracking-tight">
                         Griselle Bou de Blanco
                       </h3>
