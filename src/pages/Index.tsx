@@ -270,7 +270,7 @@ const Index = () => {
                       src={founderPhoto}
                       alt="Griselle Bou, Directora de Preescolar Sonsoles"
                       loading="lazy"
-                      className="w-52 sm:w-60 md:w-72 aspect-[3/4] object-cover object-top flex-shrink-0 self-end block"
+                      className="w-64 sm:w-80 md:w-96 h-auto object-contain flex-shrink-0 self-end block"
                     />
                     <div className="flex flex-col justify-center text-center md:text-left max-w-xl pb-8 sm:pb-14 md:pb-16 pl-8 md:pl-0">
                       <span className="block font-bold uppercase tracking-[0.18em] text-xs sm:text-sm text-ink/70 mb-3">
