@@ -256,18 +256,59 @@ const Index = () => {
           ))}
         </div>
 
-        <div className="container relative">
-          <div className="w-full rounded-3xl shadow-soft overflow-hidden" style={{ aspectRatio: "2320 / 1561" }}>
-            <img
-              src={kidsDrawing}
-              alt="Dibujo infantil de una familia con la bandera de Puerto Rico"
-              loading="lazy"
-              width={2320}
-              height={1561}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-7">
+        <div className="container grid md:grid-cols-2 gap-6 relative pb-16">
+          {/* Pink carousel — Founder */}
+          <Carousel opts={{ loop: true }} className="group">
+            <div className="rounded-3xl shadow-soft overflow-hidden" style={{ background: "hsl(340 80% 88%)" }}>
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="p-8 sm:p-10 flex flex-col sm:flex-row gap-6 items-center text-ink min-h-[420px]">
+                    <img
+                      src={founderPhoto}
+                      alt="Griselle Bou, Directora de Preescolar Sonsoles"
+                      loading="lazy"
+                      className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-soft border-4 border-card flex-shrink-0"
+                    />
+                    <div className="text-center sm:text-left">
+                      <span className="font-bold uppercase tracking-wider text-xs text-ink/70">Fundadora</span>
+                      <h3 className="text-3xl sm:text-4xl mt-1 mb-1" style={{ fontFamily: "'ChildsPlayground', cursive" }}>Griselle Bou</h3>
+                      <p className="text-sm font-semibold text-ink/80 mb-4">Directora de Preescolar Sonsoles</p>
+                      <ul className="space-y-2 text-sm text-ink/90 list-disc list-inside text-left">
+                        <li>Música nominada a un Latin Grammy.</li>
+                        <li>Autora publicada de <em>Canciones y Cantos Juegos del Folkore Puertorriqueño</em>.</li>
+                        <li>Directora de la Junta del Coro Niño San Juan.</li>
+                        <li>Maestría en Educación Temprana, con 40 años de experiencia en educación musical infantil.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+            </div>
+            <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+          </Carousel>
+
+          {/* Green carousel — Family animation */}
+          <Carousel opts={{ loop: true }} className="group">
+            <div className="rounded-3xl shadow-soft overflow-hidden bg-leaf">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="w-full overflow-hidden min-h-[420px] flex items-center justify-center">
+                    <img
+                      src={kidsDrawing}
+                      alt="Dibujo infantil de una familia con la bandera de Puerto Rico"
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+            </div>
+            <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+          </Carousel>
+
+          <div className="md:col-span-2 flex justify-center">
             <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
           </div>
         </div>
