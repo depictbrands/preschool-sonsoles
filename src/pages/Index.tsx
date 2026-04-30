@@ -258,44 +258,43 @@ const Index = () => {
           ))}
         </div>
 
-        <div className="container grid md:grid-cols-2 gap-6 relative pb-16">
-          {/* Pink carousel — Founder */}
+        <div className="container relative pb-16">
           <Carousel opts={{ loop: true }} className="group">
-            <div className="rounded-3xl shadow-soft overflow-hidden" style={{ background: "hsl(340 80% 88%)" }}>
-              <CarouselContent>
-                <CarouselItem>
-                  <div className="p-8 sm:p-10 flex flex-col sm:flex-row gap-6 items-center text-ink min-h-[420px]">
+            <CarouselContent>
+              {/* Slide 1 — Pink: Founder */}
+              <CarouselItem>
+                <div className="rounded-3xl shadow-soft overflow-hidden" style={{ background: "hsl(340 80% 88%)" }}>
+                  <div className="p-8 sm:p-12 flex flex-col md:flex-row gap-8 items-center text-ink min-h-[460px]">
                     <img
                       src={founderPhoto}
                       alt="Griselle Bou, Directora de Preescolar Sonsoles"
                       loading="lazy"
-                      className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-soft border-4 border-card flex-shrink-0"
+                      className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-soft border-4 border-card flex-shrink-0"
                     />
-                    <div className="text-center sm:text-left">
+                    <div className="text-center md:text-left max-w-xl">
                       <span className="font-bold uppercase tracking-wider text-xs text-ink/70">Fundadora</span>
                       <h3 className="text-3xl sm:text-4xl mt-1 mb-1" style={{ fontFamily: "'ChildsPlayground', cursive" }}>Griselle Bou</h3>
                       <p className="text-sm font-semibold text-ink/80 mb-4">Directora de Preescolar Sonsoles</p>
-                      <ul className="space-y-2 text-sm text-ink/90 list-disc list-inside text-left">
+                      <ul className="space-y-2 text-sm text-ink/90 list-disc list-inside text-left mb-5">
                         <li>Música nominada a un Latin Grammy.</li>
                         <li>Autora publicada de <em>Canciones y Cantos Juegos del Folkore Puertorriqueño</em>.</li>
                         <li>Directora de la Junta del Coro Niño San Juan.</li>
                         <li>Maestría en Educación Temprana, con 40 años de experiencia en educación musical infantil.</li>
                       </ul>
+                      <Button asChild variant="sun" size="lg">
+                        <a href="mailto:grisellebou@gmail.com">
+                          <Mail className="h-4 w-4" /> Escríbele a Griselle
+                        </a>
+                      </Button>
                     </div>
                   </div>
-                </CarouselItem>
-              </CarouselContent>
-            </div>
-            <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-            <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-          </Carousel>
+                </div>
+              </CarouselItem>
 
-          {/* Green carousel — Family animation */}
-          <Carousel opts={{ loop: true }} className="group">
-            <div className="rounded-3xl shadow-soft overflow-hidden bg-leaf">
-              <CarouselContent>
-                <CarouselItem>
-                  <div className="w-full overflow-hidden min-h-[420px] flex items-center justify-center">
+              {/* Slide 2 — Green: Family illustration */}
+              <CarouselItem>
+                <div className="rounded-3xl shadow-soft overflow-hidden bg-leaf">
+                  <div className="w-full overflow-hidden min-h-[460px] flex items-center justify-center">
                     <img
                       src={kidsDrawing}
                       alt="Dibujo infantil de una familia con la bandera de Puerto Rico"
@@ -303,14 +302,14 @@ const Index = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                </CarouselItem>
-              </CarouselContent>
-            </div>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
             <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
             <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
           </Carousel>
 
-          <div className="md:col-span-2 flex justify-center">
+          <div className="flex justify-center mt-10">
             <Button asChild variant="sun" size="xl"><a href="https://calendly.com/preescolarsonsoles" target="_blank" rel="noopener noreferrer">Conoce nuestro programa</a></Button>
           </div>
         </div>
