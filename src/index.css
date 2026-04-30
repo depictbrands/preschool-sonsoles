@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap');
 
 @font-face {
   font-family: 'SoupBone';
@@ -84,16 +84,16 @@
   * { @apply border-border; }
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Sora', system-ui, sans-serif;
     font-weight: 600;
   }
   h1, h2, h3, h4 {
-    font-family: 'Sour Gummy', 'Inter', system-ui, sans-serif;
+    font-family: 'Sour Gummy', 'Sora', system-ui, sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   p {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Sora', system-ui, sans-serif;
     font-weight: 600;
   }
 }

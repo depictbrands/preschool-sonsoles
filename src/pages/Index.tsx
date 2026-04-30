@@ -242,7 +242,7 @@ const Index = () => {
       <section id="sobre" className="bg-muted py-20">
         <div className="container text-center max-w-5xl mb-14">
           <h2 className="text-5xl sm:text-6xl text-ink mb-5" style={{ fontFamily: "'ChildsPlayground', cursive" }}>Sembrando excelencia en el corazón de la familia puertorriqueña.</h2>
-          <p className="text-lg text-muted-foreground font-semibold" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
+          <p className="text-lg text-muted-foreground font-semibold" style={{ fontFamily: "'Sora', system-ui, sans-serif" }}>Un programa diseñado para edades 2 a 4 años, donde cada niño descubre su mejor versión rodeado de amor y aprendizaje significativo.</p>
         </div>
 
         <div className="container grid md:grid-cols-3 gap-6 mb-16">
