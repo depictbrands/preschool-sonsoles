@@ -438,7 +438,7 @@ const Index = () => {
           <p className="text-lg text-muted-foreground font-bold">Encuéntranos fácilmente en el mapa.</p>
         </div>
         <div className="container grid md:grid-cols-2 gap-6">
-          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-primary aspect-[16/9]">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-primary aspect-[16/9] border-0">
             <img
               src={sonsolesBuilding}
               alt="Edificio Preescolar Sonsoles"
