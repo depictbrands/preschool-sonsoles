@@ -445,7 +445,7 @@ const Index = () => {
               className="w-full h-full object-cover bg-primary border-0 border-primary-foreground"
             />
           </div>
-          <div className="rounded-3xl overflow-hidden shadow-playful border-8 border-card aspect-[16/9]">
+          <div className="rounded-3xl overflow-hidden shadow-playful border-card aspect-[16/9] border-0">
             <iframe
               title="Ubicación Preescolar Sonsoles"
               src="https://www.google.com/maps?q=C.+Madre+Teresa+Jornet,+San+Juan,+00926,+Puerto+Rico&output=embed"
