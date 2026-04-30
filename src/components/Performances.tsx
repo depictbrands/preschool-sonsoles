@@ -14,14 +14,14 @@ const performances: Performance[] = [
   {
     title: "Día de Juegos",
     description:
-      "Un día lleno de risas, movimiento y aprendizaje al aire libre.",
-    videoUrl: "",
+      "Un día familiar lleno de risas, movimiento y cariño.",
+    videoUrl: "/compressed - 2026 Dia de Juegos.mp4",
   },
   {
     title: "Programa de Navidad",
     description:
       "Nuestros niños celebrando la magia de la Navidad sobre el escenario.",
-    videoUrl: "",
+    videoUrl: "/compressed - Programa de Navidad 2025 60s.mp4",
   },
 ];
 
