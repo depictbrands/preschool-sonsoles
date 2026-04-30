@@ -10,6 +10,8 @@ import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import Performances from "@/components/Performances";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import heroKids from "@/assets/hero-kids.jpg";
 import founderPhoto from "@/assets/founder-griselle.jpg";
 
@@ -25,6 +27,7 @@ import sonsolesBuilding from "@/assets/sonsoles-building.jpg";
 import { useEffect, useState } from "react";
 
 const Index = () => {
+  const sobreAutoplay = useRef(Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }));
   const facilityImages = [facility1, facility2, facility3, facility4];
   const [facilityIndex, setFacilityIndex] = useState(0);
   useEffect(() => {
@@ -260,7 +263,7 @@ const Index = () => {
         </div>
 
         <div className="container relative pb-16">
-          <Carousel opts={{ loop: true }} className="group">
+          <Carousel opts={{ loop: true }} plugins={[sobreAutoplay.current]} className="group">
             <CarouselContent>
               {/* Slide 1 — Pink: Founder */}
               <CarouselItem>
