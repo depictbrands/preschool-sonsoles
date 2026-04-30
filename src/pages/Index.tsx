@@ -398,6 +398,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PRESENTACIONES */}
+      <Performances />
+
       {/* VIDEO TESTIMONIOS */}
       <VideoTestimonials />
 
