@@ -10,6 +10,8 @@ import logo from "@/assets/logo.gif";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import Performances from "@/components/Performances";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import heroKids from "@/assets/hero-kids.jpg";
 import founderPhoto from "@/assets/founder-griselle.jpg";
 
