@@ -264,7 +264,7 @@ const Index = () => {
               {/* Slide 1 — Pink: Founder */}
               <CarouselItem>
                 <div className="rounded-3xl shadow-soft overflow-hidden h-full" style={{ background: "hsl(338 65% 78%)" }}>
-                  <div className="pt-8 sm:pt-14 md:pt-16 px-8 sm:px-14 md:px-16 flex flex-col md:flex-row gap-10 md:gap-12 items-end text-ink min-h-[560px] h-full max-w-5xl mx-auto">
+                  <div className="pt-8 sm:pt-14 md:pt-16 pr-8 sm:pr-14 md:pr-16 flex flex-col md:flex-row gap-10 md:gap-12 items-end text-ink min-h-[560px] h-full max-w-5xl mx-auto">
                     <img
                       src={founderPhoto}
                       alt="Griselle Bou, Directora de Preescolar Sonsoles"
