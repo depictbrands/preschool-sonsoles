@@ -263,7 +263,7 @@ const Index = () => {
         </div>
 
         <div className="container relative pb-16">
-          <Carousel opts={{ loop: true }} className="group">
+          <Carousel opts={{ loop: true }} plugins={[sobreAutoplay.current]} className="group">
             <CarouselContent>
               {/* Slide 1 — Pink: Founder */}
               <CarouselItem>
